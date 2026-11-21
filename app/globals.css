@@ -1,0 +1,46 @@
+:root { --bg: #0f1115; --panel: #171a21; --panel2: #1e222c; --text: #e8eaf0; --muted: #9aa3b2; --border: #2c3240; --accent: #6ea8fe; --danger: #ff7a7a; --ok: #5fd68a; --warn: #f5c542; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+header.top { display: flex; gap: 16px; align-items: baseline; padding: 18px 24px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+header.top h1 { margin: 0; font-size: 22px; }
+header.top p { margin: 0; color: var(--muted); }
+header.top nav { margin-left: auto; display: flex; gap: 16px; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+section.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+section.card h2 { margin: 0 0 4px; font-size: 18px; }
+section.card .sub { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+input, select, textarea { width: 100%; background: var(--panel2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 9px 10px; font-size: 14px; font-family: inherit; }
+input.invalid, textarea.invalid, select.invalid { border-color: var(--danger); }
+textarea { min-height: 70px; font-family: ui-monospace, monospace; font-size: 13px; }
+textarea.tall { min-height: 130px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.err { color: var(--danger); font-size: 13px; margin-top: 4px; }
+.hint { color: var(--muted); font-size: 12px; margin-top: 4px; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.row > * { flex: 1; min-width: 160px; }
+button { background: var(--accent); color: #0b1220; border: none; border-radius: 6px; padding: 9px 16px; font-size: 14px; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+button.secondary { background: var(--panel2); color: var(--text); border: 1px solid var(--border); }
+button.danger { background: transparent; color: var(--danger); border: 1px solid var(--danger); padding: 5px 10px; font-size: 13px; }
+button.small { padding: 5px 10px; font-size: 13px; }
+.toolbox { border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 14px; background: var(--panel2); }
+.toolbox h3 { margin: 0 0 6px; font-size: 15px; }
+.toolbox h3 .badge { font-size: 11px; background: var(--warn); color: #201800; border-radius: 4px; padding: 2px 6px; margin-left: 8px; vertical-align: middle; }
+.banner { border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; font-size: 14px; }
+.banner.error { background: #3a1d1d; border: 1px solid var(--danger); color: #ffd2d2; }
+.banner.ok { background: #173324; border: 1px solid var(--ok); color: #c9f2d8; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0; }
+.tabs button { background: var(--panel2); color: var(--text); border: 1px solid var(--border); padding: 6px 12px; font-size: 13px; }
+.tabs button.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
+pre.code { background: #0b0d12; border: 1px solid var(--border); border-radius: 8px; padding: 14px; overflow: auto; max-height: 480px; font-size: 12.5px; line-height: 1.5; white-space: pre; }
+.examples { display: flex; gap: 10px; flex-wrap: wrap; }
+.example { flex: 1; min-width: 220px; text-align: left; background: var(--panel2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.example b { display: block; margin-bottom: 4px; }
+.example span { font-weight: 400; color: var(--muted); font-size: 13px; }
+.example.active { border-color: var(--accent); }
+.gallery-item { border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 12px; background: var(--panel2); }
+.gallery-item h3 { margin: 0 0 4px; }
+.gallery-item p { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+footer { color: var(--muted); font-size: 13px; padding: 20px 24px; border-top: 1px solid var(--border); }
